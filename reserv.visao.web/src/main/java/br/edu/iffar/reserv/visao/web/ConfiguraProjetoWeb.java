@@ -3,7 +3,7 @@ package br.edu.iffar.reserv.visao.web;
 import javax.enterprise.event.Observes;
 
 import br.com.caelum.vraptor.events.VRaptorInitialized;
-import br.edu.iffar.reserv.dao.hibernate.HibernateDAO;
+import br.edu.iffar.reserv.dao.mysql.MysqliDAO;
 import br.edu.iffar.reserv.modelo.core.dao.FabricaDAO;
 
 /*
@@ -19,7 +19,7 @@ public class ConfiguraProjetoWeb {
 	public void inicializa(@Observes VRaptorInitialized init) {
 		System.out.println("Inicializando app web");
 		// define o modelo de persistencia
-		FabricaDAO.defineModelo(new HibernateDAO());
+		FabricaDAO.defineModelo(new MysqliDAO());
 		System.out.println("Persistence Model defined!");
 	}
 }

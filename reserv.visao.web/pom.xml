@@ -42,12 +42,12 @@
 			<artifactId>reserv.controle</artifactId>
 			<version>1.0</version>
 		</dependency>
-		
+		<!--
 		<dependency>
 			<groupId>br.edu.iffar</groupId>
-			<artifactId>reserv.dao.hibernate</artifactId>
+			<artifactId>reserv.dao.mysql</artifactId>
 			<version>1.0</version>
-		</dependency>
+		</deendency>  -->
 		
 		<dependency>
 			<groupId>br.com.caelum</groupId>
