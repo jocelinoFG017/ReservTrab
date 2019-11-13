@@ -11,11 +11,37 @@
   <url>http://maven.apache.org</url>
   <description> Implementation DAO</description>
 
+	<build>
+		<directory>target</directory>
+		<outputDirectory>target/classes</outputDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <dependencies>
+  
+  <dependency>
+			<groupId>br.edu.iffar</groupId>
+			<artifactId>reserv.modelo</artifactId>
+			<version>1.0</version>
+		</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -24,15 +50,9 @@
     </dependency>
      <!-- Dependency do MYSQL  -->
     <dependency>
-		<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.17</version>
-	</dependency>
-	<!-- Dependency do model -->
-	<dependency>
-			<groupId>br.edu.iffar</groupId>
-			<artifactId>reserv.modelo</artifactId>
-			<version>1.0</version>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.5</version>
 	</dependency>
 	
     <dependency>
@@ -42,7 +62,6 @@
       <version>3.8.2</version>
       <scope>import</scope>
     </dependency>
-    
   
   </dependencies>
 </project>

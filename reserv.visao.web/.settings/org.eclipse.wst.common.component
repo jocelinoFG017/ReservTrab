@@ -7,24 +7,16 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
                 
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-                
         <dependent-module archiveName="reserv.modelo-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reserv.modelo/reserv.modelo">
-                        
             <dependency-type>uses</dependency-type>
-                    
         </dependent-module>
-                
         <dependent-module archiveName="reserv.controle-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reserv.controle/reserv.controle">
-                        
             <dependency-type>uses</dependency-type>
-                    
         </dependent-module>
-                
-        <dependent-module archiveName="reserv.dao.hibernate-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reserv.dao.hibernate/reserv.dao.hibernate">
-                        
+        <dependent-module archiveName="reserv.dao.mysql-0.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/reserv.dao.mysql/reserv.dao.mysql">
             <dependency-type>uses</dependency-type>
-                    
         </dependent-module>
                 
         <property name="context-root" value="reserv.visao.web"/>

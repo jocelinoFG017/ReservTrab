@@ -16,4 +16,5 @@ public class ItemDAO extends MysqliDAO implements IItemDAO{
 	public ItemDAO() {
 		super(Item.class);
 	}
+	
 }

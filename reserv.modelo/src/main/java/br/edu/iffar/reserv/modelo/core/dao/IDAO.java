@@ -6,7 +6,7 @@ import br.edu.iffar.reserv.modelo.core.IEntidade;
 
 /**
  * <p>
- * Interface com as ações comuns de persistencia
+ * Interface com as aÃ§Ãµes comuns de persistencia
  * </p>
  * 
  * @author Professor
@@ -44,9 +44,9 @@ public interface IDAO {
 
 	/**
 	 * <p>
-	 * Cria uma classe concreta que implementa os compostamentos especificos e
-	 * genéricos do padrao DAO, ou seja, se informarmos uma classe do tipo Quarto,
-	 * este método deve criar uma classe QuartoDAO.
+	 * Cria uma classe concreta que implementa os compostamentos esopecificos e
+	 * genÃ©ricos do padrÃ£o DAO, ou seja, se informarmos uma classe do tipo Quarto,
+	 * este mÃ©todo deve criar uma classe QuartoDAO.
 	 * </p>
 	 */
 	public <Futuro extends IDAO> Futuro criaNovoDAO(Class<? extends IEntidade> classeEntidade) throws DAOException;

@@ -12,20 +12,21 @@ import java.sql.Statement;
 * 
 */
 @SuppressWarnings("all")
-public class ConectaBanco {
+public class ConectaBanco {// esse funciona
 	public static void main(String[] args) throws Exception  {
 		// carrega a classe do jar de conexao
 		// o jar deve estar no class path
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("org.postgresql.Driver");
 		// define a url de conexao
-		String url = "jdbc:mysql://localhost/java";
-		url += "?useTimezone=true&serverTimezone=UTC";
+		String url = "jdbc:postgresql://localhost/reserv";
+		url += "?useTimezone=true&serverTimezone=America/Sao_Paulo";
+		
 		//abre a conexao
-		Connection con = DriverManager.getConnection(url, "root", "");
+		Connection con = DriverManager.getConnection(url, "postgres", "postgres");
 		
 		// cria o comando SQL para inserir um item
 		String query = "insert into item values";
-		query +="('1', 'sofa')";
+		query +="('2', 'sofa')";
 		// cria um objeto de transporte para o comando sql
 		Statement smt = con.createStatement();
 		// envia a sql para o banco de dados

@@ -7,21 +7,20 @@ import br.com.caelum.vraptor.Result;
 
 /**
  * <p>
- * Controlador padrão para requisições inicias
+ * Controlador padrÃ£o para requisiÃ§Ãµes inicias
  * </p>
  * 
- * @author JoGar|017
+ * @author Professor
  * @since Oct 1, 2019 9:42:14 PM
  */
 @Controller
 public class IndexController {
-@Inject
+	@Inject
 	private Result result;
 	
 	public void hello() {
 		String mensagem = "hello world!";
 		System.out.println(mensagem);
-		
 		
 		result.include("msg", mensagem);
 	}
