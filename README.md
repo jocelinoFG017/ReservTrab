@@ -1,7 +1,9 @@
 
 
 <h1> # ReservTrab </h1>
-Repositório Criado para armazenar os arquivos e códigos do Trabalho POOA 2019/4
+
+Repositório Criado para armazenar os arquivos e códigos do Trabalho POOA 2019.2
+
 
 -- Foi desenvolvido um pequeno crud em java para aplicar os conceitos vistos em aula
 
@@ -11,8 +13,8 @@ Repositório Criado para armazenar os arquivos e códigos do Trabalho POOA 2019/
 
   - O modelo MVC.
   
-  - Algumas dependencias do maven.
+  - Maven.
   
   - PostgreSQL.
   
-  - 
+
